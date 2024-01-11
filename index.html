@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #000;
+            background-size: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .gridcontainer{
+            height: 100rem;
+            width: 100%;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(5 , 1fr) 1.2fr 1.2fr 0.5fr;
+            grid-template-rows: 11vw repeat(5 , 13vw) 11vw 6.5vw 6.5vw;
+            gap: 10px;
+        }
+        body > div > div{
+            background-color: aliceblue;
+        }
+        .grey1{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/01.jpg);
+            grid-column: span 2;
+        }
+        .white1{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/02.jpg);
+            grid-column: span 3;
+        }
+        .yellow1{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/03.jpg);
+            grid-column: span 2;
+        }
+        .white2{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/04.jpg);
+            grid-row: span 6;
+        }
+        .white3{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/05.jpg);
+            grid-row: span 2;
+        }
+        .red1{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/06.jpg);
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        .yellow2{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/07.jpg);
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .grey2{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/08.jpg);
+            grid-row: span 3;
+        }
+        .white4{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/09.jpg);
+            grid-row: span 2;
+        }
+        .white5{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/10.jpg);
+            grid-row: span 2;
+        }
+        .black1{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/11.jpg);
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .grey3{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/12.jpg);
+            grid-column: span 2;
+        }
+        .white6{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/13.jpg);
+            grid-column: span 2;
+        }
+        .yellow3{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/14.jpg);
+            grid-row: span 3;
+        }
+        .grey4{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/15.jpg);
+            grid-column: span 2;
+        }
+        .blue1{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/16.jpg);
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .red2{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/17.jpg);
+            grid-row: span 3;
+        }
+        .white7{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/18.jpg);
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .black2{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/19.jpg);
+            grid-column: span 2;
+        }
+        .white8{
+            background-image: url(https://labs.jensimmons.com/2017/media/01-011/20.jpg);
+            grid-column: span 4;
+        }
+        #boxes{
+            background-repeat: no-repeat;
+            background-size: cover ;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div id="boxes" class="grey1">1</div>
+        <div id="boxes" class="white1">2</div>
+        <div id="boxes" class="yellow1">3</div>
+        <div id="boxes" class="white2">4</div>
+        <div id="boxes" class="white3">5</div>
+        <div id="boxes" class="red1">6</div>
+        <div id="boxes" class="yellow2">7</div>
+        <div id="boxes" class="grey2">8</div>
+        <div id="boxes" class="white4">9</div>
+        <div id="boxes" class="white5">10</div>
+        <div id="boxes" class="black1">11</div>
+        <div id="boxes" class="grey3">12</div>
+        <div id="boxes" class="white6">13</div>
+        <div id="boxes" class="yellow3">14</div>
+        <div id="boxes" class="grey4">15</div>
+        <div id="boxes" class="blue1">16</div>
+        <div id="boxes" class="red2">17</div>
+        <div id="boxes" class="white7">18</div>
+        <div id="boxes" class="black2">19</div>
+        <div id="boxes" class="white8">20</div>
+    </div>
+</body>
+</html>
